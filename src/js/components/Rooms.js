@@ -7,7 +7,17 @@ export default class Layout extends React.Component {
 
     render() {
         return(
-            <h2>This is Rooms area.</h2>
+            <div>
+                <h2>This is Rooms area.</h2>
+                <div>Room</div>
+                <div>Room</div>
+                <div>Room</div>
+                <div>Room</div>
+                <div>Room</div>
+                <div>Room</div>
+                <div>Room</div>
+                <div>Room</div>
+            </div>
         );
     }
 }

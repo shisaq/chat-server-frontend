@@ -1,8 +1,5 @@
 import React from "react";
 
-import Name from "./Name";
-import UserList from "./UserList";
-
 export default class Layout extends React.Component {
     constructor() {
         super();
@@ -10,10 +7,9 @@ export default class Layout extends React.Component {
 
     render() {
         return(
-            <div id="container">
-                <h1>Chat Server</h1>
-                    <Name />
-                    <UserList />
+            <div class="">
+                <label class="">Name: </label>
+                <input class="" />
             </div>
         );
     }
