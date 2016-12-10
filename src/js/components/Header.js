@@ -3,6 +3,12 @@ import React from "react";
 import Name from "./Name";
 import UserList from "./UserList";
 
+const headerStyle = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    padding: '0 20px'
+};
+
 export default class Header extends React.Component {
     constructor() {
         super();
@@ -10,11 +16,10 @@ export default class Header extends React.Component {
 
     render() {
         return(
-            <div id="container">
-                <h1>Chat Server</h1>
+            <header id="header" className="onerow" style={headerStyle}>
                 <Name />
                 <UserList />
-            </div>
+            </header>
         );
     }
 }
