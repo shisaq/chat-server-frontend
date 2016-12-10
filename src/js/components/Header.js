@@ -3,7 +3,7 @@ import React from "react";
 import Name from "./Name";
 import UserList from "./UserList";
 
-export default class Layout extends React.Component {
+export default class Header extends React.Component {
     constructor() {
         super();
     }
@@ -12,8 +12,8 @@ export default class Layout extends React.Component {
         return(
             <div id="container">
                 <h1>Chat Server</h1>
-                    <Name />
-                    <UserList />
+                <Name />
+                <UserList />
             </div>
         );
     }

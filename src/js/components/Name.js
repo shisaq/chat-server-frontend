@@ -1,6 +1,7 @@
 import React from "react";
+import TextField from 'material-ui/TextField';
 
-export default class Layout extends React.Component {
+export default class Name extends React.Component {
     constructor() {
         super();
     }
@@ -9,7 +10,10 @@ export default class Layout extends React.Component {
         return(
             <div class="">
                 <label class="">Name: </label>
-                <input class="" />
+                <TextField
+                  hintText="nickname"
+                  floatingLabelText="Press enter to submit"
+                />
             </div>
         );
     }
