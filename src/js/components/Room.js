@@ -13,13 +13,20 @@ const styles = {
     roomStyle: {
         width: '30%',
         minWidth: 300,
-        height: 350,
+        height: 400,
         position: 'relative'
     },
     closeStyle: {
         position: 'absolute',
         top: 0,
         right: 0
+    },
+    chatRecord: {
+        width: '30%',
+        minWidth: 300,
+        height: 270,
+        border: '2px solid blue',
+        overflowY: 'auto'
     },
     inputArea: {
         position: 'absolute',
@@ -57,6 +64,7 @@ export default class Room extends React.Component {
                     <IconButton style={styles.closeStyle}>
                         <CloseButton />
                     </IconButton>
+                    <div style={styles.chatRecord}></div>
                     <TextField
                         style={styles.inputArea}
                         hintText="message"

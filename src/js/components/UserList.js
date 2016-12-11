@@ -3,7 +3,11 @@ import DropDownMenu from "material-ui/DropDownMenu";
 import MenuItem from "material-ui/MenuItem";
 
 const styles = {
-    userListStyle: {width: '50%'},
+    userListStyle: {
+        width: '50%',
+        position: 'relative',
+        top: -15
+    },
     dropDownStyles: {
         width: 300,
         top: 20

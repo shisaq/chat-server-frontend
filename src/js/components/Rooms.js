@@ -19,7 +19,6 @@ export default class Rooms extends React.Component {
     render() {
         return(
             <div>
-                <h2>This is Rooms area.</h2>
                 <ul class="rooms" style={roomsStyle}>
                     <Room />
                     <Room />
