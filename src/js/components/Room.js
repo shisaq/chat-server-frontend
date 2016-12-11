@@ -4,14 +4,16 @@ import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
 import IconButton from 'material-ui/IconButton';
 import CloseButton from 'material-ui/svg-icons//navigation/close';
+import Paper from 'material-ui/Paper';
 
 const styles = {
+    paperStyle: {
+        margin: 10
+    },
     roomStyle: {
         width: '30%',
         minWidth: 300,
-        margin: 10,
         height: 350,
-        border: '2px solid black',
         position: 'relative'
     },
     closeStyle: {
@@ -45,6 +47,7 @@ export default class Room extends React.Component {
 
     render() {
         return(
+            <Paper style={styles.paperStyle} zDepth={2}>
             <li class="room" style={styles.roomStyle}>
                 <Card>
                     <CardHeader
@@ -67,6 +70,7 @@ export default class Room extends React.Component {
                     </CardActions>
                 </Card>
             </li>
+            </Paper>
         );
     }
 }
