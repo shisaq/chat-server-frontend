@@ -12,12 +12,19 @@ const headerStyle = {
 export default class Header extends React.Component {
     constructor() {
         super();
+        this.state = {
+            name: ''
+        };
+    }
+
+    addName(name) {
+        this.setState({name});
     }
 
     render() {
         return(
             <header id="header" className="onerow" style={headerStyle}>
-                <Name />
+                <Name addName={this.addName.bind(this)} name={this.state.name} />
                 <UserList />
             </header>
         );
